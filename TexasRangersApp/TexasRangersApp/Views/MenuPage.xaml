@@ -38,7 +38,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Chuck Norris Joke here" FontAttributes="Bold" FontSize="22" />
+                                <Span Text="Chuck Norris Joke" FontAttributes="Bold" FontSize="22" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>

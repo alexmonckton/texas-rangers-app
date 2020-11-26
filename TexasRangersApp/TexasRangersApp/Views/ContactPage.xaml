@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TexasRangersApp.Views.ContactPage"
+             xmlns:vm="clr-namespace:TexasRangersApp.ViewModels"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:ContactViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#bf6228</Color>
+            <Color x:Key="Accent">#f2b888</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="265" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Grid.ColumnSpan="2">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="Picture3.jpg" VerticalOptions="Center" WidthRequest="300" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <Label Text="Phone: 09 227 4383" Grid.Row="1" Margin="20, 20" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Text="131 Queen Street, Auckland CBD, Auckland 1010" Grid.Row="1" Margin="20, 60" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Text="Email: hello@texasrangers.co.nz" Grid.Row="1" Margin="20, 120" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button Grid.Row="2" WidthRequest="10" HeightRequest="10" Text="Map" Grid.ColumnSpan="2" Margin="90, -80, 90, 80" Clicked="Button_Clicked"></Button>
+    </Grid>
+</ContentPage>

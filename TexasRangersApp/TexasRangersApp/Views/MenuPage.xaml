@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TexasRangersApp.Views.MenuPage"
+             xmlns:vm="clr-namespace:TexasRangersApp.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:MenuViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#bf6228</Color>
+            <Color x:Key="Accent">#f2b888</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Grid.ColumnSpan="2">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="texas_rangers_logo.png" VerticalOptions="Center" WidthRequest="200" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1" Grid.ColumnSpan="2">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Chuck Norris Joke here" FontAttributes="Bold" FontSize="22" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+        <StackLayout Grid.Row="2" Grid.Column="0">
+            <Button Margin="10,10,5,0" Text="Food"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Clicked="FoodMenuClicked"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Grid.Column="1">
+            <Button Margin="5,10,10,0" Text="Drinks"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Clicked="DrinksMenuClicked"/>
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>

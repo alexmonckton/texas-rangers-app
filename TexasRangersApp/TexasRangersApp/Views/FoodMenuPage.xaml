@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TexasRangersApp.Views.FoodMenuPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Title" TargetType="Label">
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="TextColor" Value="#542701"/>
+                <Setter Property="FontFamily" Value="CustomFont"/>
+            </Style>
+            <Style x:Key="Description" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#f2b888">
+            <StackLayout Margin="15, 15, 15, 15">
+            <Label Text="Food Menu" HorizontalOptions="Center" FontSize="40" TextColor="Black"/>
+            <Label Text="Sizzling Steak 1.65" Style="{StaticResource Title}"/>
+            <Label Text="Mushrooms, Olives, Celery, Choice of Potatoes and Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Planked Steak 1.65" Style="{StaticResource Title}"/>
+            <Label Text="Mushrooms, Hot Peppers, Olives, Celery, Choice of Potatoes, Grilled Onions, Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Filet Mignon 1.35" Style="{StaticResource Title}"/>
+            <Label Text="Olives, Celery, Mushrooms, Choice of Potatoes, Grilled Onions, Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Big Small Steak 95" Style="{StaticResource Title}"/>
+            <Label Text="Tomato Juice, Salad, Choice of Potatoes, Grilled Onions, Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Broiled Pork Chops 70" Style="{StaticResource Title}"/>
+            <Label Text="Tomato Juice, Salad, Potatoes, Apple Sauce, Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Large Lamb Chops 70" Style="{StaticResource Title}"/>
+            <Label Text="Tomato Juice, Salad, Potatoes and Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Half Barbecued Chicken 65" Style="{StaticResource Title}"/>
+            <Label Text="French Fried Potatoes, Cole Slaw, Bread, Butter and Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Half Fried Chicken 65" Style="{StaticResource Title}"/>
+            <Label Text="French Fried Potatoes, Cole Slaw, Bread, Butter and Coffee" Style="{StaticResource Description}"/>
+            <Label Text="Barbecued Ribs 50" Style="{StaticResource Title}"/>
+            <Label Text="French Fried Potatoes, Cole Slaw, Bread, Butter and Coffee"  Style="{StaticResource Description}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

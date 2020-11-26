@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TexasRangersApp.Views.DrinksMenuPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Title" TargetType="Label">
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="TextColor" Value="#542701"/>
+                <Setter Property="FontFamily" Value="CustomFont"/>
+            </Style>
+            <Style x:Key="Description" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#f2b888">
+            <StackLayout Margin="15, 15, 15, 15">
+            <Label Text="Drinks Menu" HorizontalOptions="Center" FontSize="40" TextColor="Black"/>
+                
+            <Label Text="Bonded Whiskey" Style="{StaticResource Title}"/>
+            <Label Text="Old Taylor 40" Style="{StaticResource Description}"/>
+            <Label Text="Old Overholt 40" Style="{StaticResource Description}"/>
+            <Label Text="Old Grand Dad 40" Style="{StaticResource Description}"/>
+            <Label Text="Old Crow 35" Style="{StaticResource Description}"/>
+            <Label Text="Old Republic 30" Style="{StaticResource Description}"/>
+                
+            <Label Text="Bourbon Whiskey" Style="{StaticResource Title}"/>
+            <Label Text="Four Roses 35" Style="{StaticResource Description}"/>
+            <Label Text="Golden Wedding 30" Style="{StaticResource Description}"/>
+            <Label Text="Old Oscar Pepper 30" Style="{StaticResource Description}"/>
+            <Label Text="Bond and Lillard 30" Style="{StaticResource Description}"/>
+            <Label Text="Ten High 25" Style="{StaticResource Description}"/>
+                
+            <Label Text="Blended Whiskey" Style="{StaticResource Title}"/>
+            <Label Text="Canadian Club 40" Style="{StaticResource Description}"/>
+            <Label Text="Seagram's V. O. C. 40" Style="{StaticResource Description}"/>
+            <Label Text="Seagram's 7 Crown 35" Style="{StaticResource Description}"/>
+            <Label Text="Seagram's 5 Crown 30" Style="{StaticResource Description}"/>
+            <Label Text="Lord Calvert 40" Style="{StaticResource Description}"/>
+                
+            <Label Text="Rye Whiskey" Style="{StaticResource Title}"/>
+            <Label Text="Old Quaker 30" Style="{StaticResource Description}"/>
+            <Label Text="Golden Wedding 30" Style="{StaticResource Description}"/>
+            <Label Text="Paul Jones 30" Style="{StaticResource Description}"/>
+            <Label Text="Town Tavern 20" Style="{StaticResource Description}"/>
+            <Label Text="Green River 25" Style="{StaticResource Description}"/>
+                
+            <Label Text="Wines" Style="{StaticResource Title}"/>
+            <Label Text="Tokay 20" Style="{StaticResource Description}"/>
+            <Label Text="Port 20" Style="{StaticResource Description}"/>
+            <Label Text="Sherry 20" Style="{StaticResource Description}"/>
+            <Label Text="Muscatel 20" Style="{StaticResource Description}"/>
+            <Label Text="Virginia Dare Sauternes 25" Style="{StaticResource Description}"/>
+                
+            <Label Text="Bottled Beer" Style="{StaticResource Title}"/>
+            <Label Text="Stroh's 30" Style="{StaticResource Description}"/>
+            <Label Text="Budweiser 30" Style="{StaticResource Description}"/>
+            <Label Text="Blue Ribbon 30" Style="{StaticResource Description}"/>
+            <Label Text="Carling's Ale 25" Style="{StaticResource Description}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
